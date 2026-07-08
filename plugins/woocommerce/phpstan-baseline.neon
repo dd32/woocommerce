@@ -2407,15 +2407,9 @@ parameters:
 			path: includes/admin/class-wc-admin-pointers.php
 
 		-
-			message: '#^Access to an undefined property object\:\:\$base\.$#'
-			identifier: property.notFound
-			count: 1
-			path: includes/admin/class-wc-admin-post-types.php
-
-		-
 			message: '#^Access to an undefined property object\:\:\$post_type\.$#'
 			identifier: property.notFound
-			count: 2
+			count: 1
 			path: includes/admin/class-wc-admin-post-types.php
 
 		-
