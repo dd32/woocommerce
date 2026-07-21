@@ -7,17 +7,17 @@
 
 **Common errors and fixes:**
 
-| Error | Wrong | Correct |
-|-------|-------|---------|
+| Error                    | Wrong                   | Correct                                |
+| ------------------------ | ----------------------- | -------------------------------------- |
 | Object with dynamic keys | `'items' => array(...)` | `'additionalProperties' => array(...)` |
-| Enum as type | `'type' => 'enum'` | `'type' => 'string', 'enum' => [...]` |
+| Enum as type             | `'type' => 'enum'`      | `'type' => 'string', 'enum' => [...]`  |
 
 **Valid types only:** `string`, `number`, `integer`, `boolean`, `array`, `object`, `null`
 
 **Schema keywords:**
 
 | Keyword | For Type | Purpose |
-|---------|----------|---------|
+| --------- | ---------- | --------- |
 | `properties` | `object` | Define named fields |
 | `additionalProperties` | `object` | Define dynamic keys |
 | `items` | `array` | Define element schema |
@@ -179,7 +179,7 @@ array(
 ## Key Classes
 
 | File | Endpoint | Key Methods |
-|------|----------|-------------|
+| ------ | ---------- | ------------- |
 | PaymentsRestController.php | `/wc-admin/settings/payments/*` | `get_providers()`, `set_country()`, `update_providers_order()` |
 | PaymentsProviders/WooPayments/WooPaymentsRestController.php | `/wc-admin/settings/payments/providers/woopayments/*` | `get_onboarding_details()` |
 | Payments.php | N/A (business logic) | `get_payment_providers()`, `get_payment_extension_suggestions()` |
